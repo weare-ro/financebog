@@ -95,7 +95,7 @@ background-color:#ffffff;
 position:absolute;overflow:hidden;clip:rect(0,0,0,0);height:0;
 }
 .pagination a,.pagination a:hover,.pagination a:focus{
-display:block;position:absolute;right:52px;width:32px;height:32px;padding:0;background:url(_style_icons_white.png) no-repeat 0 0;
+display:block;position:absolute;right:52px;width:32px;height:32px;padding:0;background:url(style_icons_white.png) no-repeat 0 0;
 }
 .pagination .next,.pagination .next:hover,.pagination .next:focus{
 right:0;background-position:-50px 0;
@@ -119,10 +119,10 @@ right:20px;
 position:absolute;overflow:hidden;clip:rect(0,0,0,0);height:0;
 }
 #nav-toggler a{
-display:block;width:32px;height:32px;padding:0;background:url(_style_icons_white.png) no-repeat -100px 0;
+display:block;width:32px;height:32px;padding:0;background:url(style_icons_white.png) no-repeat -100px 0;
 }
 #nav-toggler a:hover{
-background:url(_style_icons_white.png) no-repeat -100px 0;
+background:url(style_icons_white.png) no-repeat -100px 0;
 }
 #nav-toggler .show-nav{
 background-position:-150px 0;
