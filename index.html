@@ -1,42 +1,327 @@
 <!DOCTYPE html>
+<!-- saved from url=(0052)https://getbootstrap.com/docs/4.0/examples/carousel/ -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ArcanePowerTech provides advance business solutions for reporting and data management as well as robotic process automation for colecting information to use with your AI engines and statistical analysis tools">
+    <meta name="author" content="Nicolescu Vlad-Bogdan">
+    <meta name="contact" content="support@arcanepowertech.com">
+    <meta name="theme-color" content="#000000" />
+    <!--Geo Tag-->
+    <meta name="geo.region" content="RO" />
+    <meta name="geo.placename" content="Ploiești" />
+    <meta name="geo.position" content="44.941747;26.02365" />
+    <meta name="ICBM" content="44.941747, 26.02365" />
+
+    <title>ArcanePowerTech</title>
+
+    <link rel="canonical" href="https://arcanepowertech.com">
     
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="./Carousel/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./Carousel/carousel.css" rel="stylesheet">
+
+    <!--site icon ---------------------------------------------------------------------------------------------->
+    <link rel="icon" type="image/png" href="./image/siteico.png">
+    <link rel="shortcut icon" href="./image/siteico.png">
+
+	
+   <!-- Quantcast Choice. Consent Manager Tag ------------------------------------------------------------------>
+	<script type="text/javascript" async=true>
+    	var elem = document.createElement('script');
+    	elem.src = 'https://quantcast.mgr.consensu.org/cmp.js';
+    	elem.async = true;
+    	elem.type = "text/javascript";
+    	var scpt = document.getElementsByTagName('script')[0];
+    	scpt.parentNode.insertBefore(elem, scpt);
+    	(function() {
+    					var gdprAppliesGlobally = false;
+    	function addFrame() {
+        				if (!window.frames['__cmpLocator']) {
+       								if (document.body) {
+            							var body = document.body,
+               					 		iframe = document.createElement('iframe');
+           						 		iframe.style = 'display:none';
+            							iframe.name = '__cmpLocator';
+            							body.appendChild(iframe);
+        							} else {
+            							// In the case where this stub is located in the head,
+            							// this allows us to inject the iframe more quickly than
+            							// relying on DOMContentLoaded or other events.
+           				 				setTimeout(addFrame, 5);
+        							}
+       							 }
+    						}
+   		addFrame();
+    	function cmpMsgHandler(event) {
+        				var msgIsString = typeof event.data === "string";
+        				var json;
+        				if(msgIsString) {
+        					json = event.data.indexOf("__cmpCall") != -1 ? JSON.parse(event.data) : {};
+        				} else {
+        					json = event.data;
+        				}
+        				if (json.__cmpCall) {
+        					var i = json.__cmpCall;
+       	 					window.__cmp(i.command, i.parameter, function(retValue, success) {
+            					var returnMsg = {"__cmpReturn": {
+            						"returnValue": retValue,
+            						"success": success,
+            						"callId": i.callId
+            				}};
+            				event.source.postMessage(msgIsString ?
+            				JSON.stringify(returnMsg) : returnMsg, '*');
+        					});
+        				}
+   					 }
+    	window.__cmp = function (c) {
+        var b = arguments;
+        if (!b.length) {
+        	return __cmp.a;
+        }
+        else if (b[0] === 'ping') {
+        	b[2]({"gdprAppliesGlobally": gdprAppliesGlobally,
+            "cmpLoaded": false}, true);
+        } else if (c == '__cmp')
+        	return false;
+        	else {
+        		if (typeof __cmp.a === 'undefined') {
+            	__cmp.a = [];
+        		}
+        		__cmp.a.push([].slice.apply(b));
+        		}
+    	}
+    	window.__cmp.gdprAppliesGlobally = gdprAppliesGlobally;
+    	window.__cmp.msgHandler = cmpMsgHandler;
+    	if (window.addEventListener) {
+        	window.addEventListener('message', cmpMsgHandler, false);
+    	}
+    	else {
+        	window.attachEvent('onmessage', cmpMsgHandler);
+    	}
+    	})();
+    	window.__cmp('init', {
+    			'Language': 'en',
+			'Initial Screen Reject Button Text': 'I do not accept',
+			'Initial Screen Accept Button Text': 'I accept',
+			'Purpose Screen Body Text': 'You can set your consent preferences and determine how you want your data to be used based on the purposes below. You may set your preferences for us independently from those of third-party partners. Each purpose has a description so that you know how we and partners use your data.',
+			'Vendor Screen Body Text': 'You can set consent preferences for each individual third-party company below. Expand each company list item to see what purposes they use data for to help make your choices. In some cases, companies may disclose that they use your data without asking for your consent, based on their legitimate interests. You can click on their privacy policies for more information and to opt out.',
+			'Vendor Screen Accept All Button Text': 'Accept all',
+			'Vendor Screen Reject All Button Text': 'Reject all',
+			'Initial Screen Body Text': 'We and our partners use technology such as cookies on our site to personalise content and ads, provide social media features, and analyse our traffic. Click below to consent to the use of this technology across the web. You can change your mind and change your consent choices at anytime by returning to this site.',
+			'Initial Screen Body Text Option': 1,
+			'Publisher Name': 'ArcanePowerTech',
+			'Publisher Logo': 'https://arcanepowertech.com/image/siteico.png',
+			'Publisher Purpose IDs': [1,2,3,4,5],
+			'Consent Scope': 'service',
+    	});
+	</script>
+	<!-- End Quantcast Choice. Consent Manager Tag ----------------------------------------------------------------------------->
     
-    <title>Weare-Ro</title>
+ 	<!-- Google search ------------------------------------------------------------------>
+	<script async src="https://cse.google.com/cse.js?cx=016901411561729194423:xkt_g_fztaa"></script>
+
+
+    <link rel="stylesheet" href="./Carousel/main_mystyle.css">
 </head>
+
 <body>
-    <div class="jumbotron text-center">
-        <h1>Weare-Ro</h1>
-        <p>This is a webpage</p>
+
+  <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #000000;"><img src="./image/sigil.png" class="rounded float-left" alt="Responsive image"> &nbsp;&nbsp;&nbsp;
+        <a class="navbar-brand" href="https://arcanepowertech.com">Arcane Power Tech</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+             </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #000000;">
+              <a class="dropdown-item" href="#" style="color:DarkGray;">Cloud Migration to Microsoft Azure</a>
+              <a class="dropdown-item" href="#" style="color:DarkGray;">Custom Process Automation</a>
+              <a class="dropdown-item" href="#" style="color:DarkGray;">Business Dashboards with MS PowerBI</a>
+            </div>
+           </li>
+           <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         		  Products
+        	    </a>
+           		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #000000;">
+         		   <a class="dropdown-item" href="#" style="color:DarkGray;">Saga 3.0 Dashboard</a>
+          		 <a class="dropdown-item" href="#" style="color:DarkGray;">GPS Time Manager</a>
+               <a class="dropdown-item" href="#" style="color:DarkGray;">Data Collector Phy</a>
+        		 </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://arcanepowertech.com/about.html">About</a>
+            </li>
+          </ul>
+          <a class="nav-link font-weight-bold d-none d-md-inline d-lg-inline d-xl-inline" href="https://portal.azure.com" target="_blank">Microsoft Azure</a>
+          <div>
+            <div class="gcse-searchbox-only" id="caut"> </div>
+          </div>           
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+
+      <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" style="background-color: #181818;">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="9000">
+            <img class="first-slide" src="./image/mainbuch.jpg" alt="Manage all your data in one place">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Create seamless integration in your business</h1>
+                <p>Manage all your data in one place</p>
+                <p><a class="btn btn-lg btn-dark" href="#scroll-rpa" role="button">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-interval="7000">
+            <img class="second-slide" src="./image/cloud.gif" alt="Move your business to the cloud">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>Move your business to the cloud</h1>
+                <p>Migrating to the cloud never was easier than it is today</p>
+                <p><a class="btn btn-lg btn-light" href="#scroll-cloud" role="button">We can help you</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-interval="7000">
+              <img class="third-slide" src="./image/mainbix.jpg" alt="Developing Intelligent Business Solutions">
+              <div class="container">
+                <div class="carousel-caption text-left">
+                  <h1>Developing Intelligent Business Solutions</h1>
+                  <p>With Python and PowerBI whe can assure a quick and efficient delivery of smart solutions</p>
+                  <p><a class="btn btn-lg btn-light" href="#scroll-bi" role="button">See how</a></p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>      
       </div>
-      
-      <div class="container">
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
         <div class="row">
-          <div class="col-sm-4">
-            <h3>Column 1</h3>
-            <p>Lorem ipsum dolor..</p>
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="./image/rpa.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Automation</h2>
+            <p>Automate your business using advance AI driven robots for your every day data processing needs reducing cost and increasing reliability.</p>
+            <p><a class="btn btn-secondary" href="#scroll-rpa" role="button">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="./image/pbi.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Reporting</h2>
+            <p>Get more out of your data with advance reporting tools and management interfaces choosing the optimal investment for your business.</p>
+            <p><a class="btn btn-secondary" href="#scroll-bi" role="button">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="./image/azure.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Cloud</h2>
+            <p>Scale your business endlessly with cloud solutions, reducing infrastructure cost while maintaining the maximum amount of cash in your bank account.</p>
+            <p><a class="btn btn-secondary" href="#scroll-cloud" role="button">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider" id="scroll-rpa">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Automation <span class="text-muted font-italic">Simplifying Life.</span></h2>
+            
+            <p align="justify" class="lead">Allows you to reduce the repetitive tasks your employees do, while increasing the time they spend on reviewing the data and growing your business. All this while creating a better and more exciting work environment.</p> 
+            <a href="#top" class="btn btn-primary d-none d-md-inline d-lg-inline d-xl-inline">Learn More</a>   
           </div>
-          <div class="col-sm-4">
-            <h3>Column 2</h3>
-            <p>Lorem ipsum dolor..</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Column 3</h3>
-            <p>Lorem ipsum dolor..</p>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto rounded" alt="RPA" src="./image/rap3.png" style="object-fit: contain;">
           </div>
         </div>
-      </div>
+        <div class="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
+             </br>
+             <a href="#" class="btn btn-primary btn-block">Learn More</a>
+        </div>
+
+        <hr class="featurette-divider" id="scroll-bi">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Business Intelligence <span class="text-muted font-italic">Insight Into Your Business.</span></h2>
+            <p align="justify" class="lead">Find more about your business from inteligent panels, desing to kep you up to date an in controll of your day to day activities.</p>
+            <a href="#top" class="btn btn-primary d-none d-md-inline d-lg-inline d-xl-inline">Learn More</a> 
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto rounded" alt="BI" src="./image/pbi.png" >
+          </div>
+        </div>
+        <div class="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
+               </br>
+               <a href="#" class="btn btn-primary btn-block">Learn More</a>
+        </div>
+
+        <hr class="featurette-divider" id="scroll-cloud">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Cloud <span class="text-muted font-italic">Freedom</span></h2>
+            <p align="justify" class="lead">Work from anywhere and frome any device, while being able to scale your bussines as you go, avoiding expensive hardware maintenance and upgrade costs.</p>
+            <a href="#top" class="btn btn-primary d-none d-md-inline d-lg-inline d-xl-inline">Learn More</a> 
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto rounded" alt="Cloud" src="./image/cloud.png" style="object-fit: contain;">
+          </div>
+        </div>
+        <div class="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
+          </br>
+          <a href="#" class="btn btn-primary btn-block">Learn More</a>
+        </div>
+
+        <hr class="featurette-divider">
+        <!-- /END THE FEATURETTES -->
+      </div><!-- /.container -->
 
 
-      <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
-</html>
+      <!-- FOOTER -->
+      <footer class="container">
+      <a href="#top" class="btn btn-dark" style="float: right;">Back to top</a>
+      <p><img src="./image/globe.svg" class="img-responsive"  alt="Responsive image"> · <a href="https://arcanepowertech.com"><u>English</u></a> · <a href="https://arcanepowertech.com">Română</a> &nbsp; <a class="btn btn-outline-secondary btn-sm font-weight-bold" href="https://www.linkedin.com/company/arcanepowertech">in</a></p>
+      <p class="float-right"></p>
+      <p>© 2019 ArcanePowerTech  - in development by Vlad Nicolescu</p>  
+      </footer>
+    </main>
+
+    
+   <!-- Bootstrap -->
+    <script src="./bootstrap/js/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    
+  </body>
+  </html>

@@ -1,0 +1,16 @@
+body {
+    background-color: #FFFFFF;
+  }
+
+  
+#caut{
+   width: 350px;
+}
+
+ @media only screen and (max-width: 1200px) {
+   #caut{
+    display: none;
+   } 
+}
+
+
